@@ -12,9 +12,15 @@
 		A1066E431E5FD4DF00D5FCC2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1066E411E5FD4DF00D5FCC2 /* Main.storyboard */; };
 		A1066E451E5FD4DF00D5FCC2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1066E441E5FD4DF00D5FCC2 /* Assets.xcassets */; };
 		A1066E481E5FD4DF00D5FCC2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1066E461E5FD4DF00D5FCC2 /* LaunchScreen.storyboard */; };
+		A14CA4301E5FDBA20010A5A1 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A14CA42F1E5FDBA20010A5A1 /* MapViewController.swift */; };
+		A1BC43291E5FF4E000D42490 /* BikeStation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BC43281E5FF4E000D42490 /* BikeStation.swift */; };
+		FF3EEC13A4DA2CFDB6E43468 /* Pods_BikeStation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 878DB4A77AF825AE4C6CA480 /* Pods_BikeStation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		00C05BF1B475CB912A7EE607 /* Pods-BikeStation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BikeStation.release.xcconfig"; path = "Pods/Target Support Files/Pods-BikeStation/Pods-BikeStation.release.xcconfig"; sourceTree = "<group>"; };
+		135291A621A3605A69BB428A /* Pods-BikeStation.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BikeStation.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BikeStation/Pods-BikeStation.debug.xcconfig"; sourceTree = "<group>"; };
+		878DB4A77AF825AE4C6CA480 /* Pods_BikeStation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BikeStation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1066E3A1E5FD4DF00D5FCC2 /* BikeStation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BikeStation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1066E3D1E5FD4DF00D5FCC2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A1066E3F1E5FD4DF00D5FCC2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +28,8 @@
 		A1066E441E5FD4DF00D5FCC2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A1066E471E5FD4DF00D5FCC2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A1066E491E5FD4DF00D5FCC2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A14CA42F1E5FDBA20010A5A1 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		A1BC43281E5FF4E000D42490 /* BikeStation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BikeStation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +37,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF3EEC13A4DA2CFDB6E43468 /* Pods_BikeStation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2967AD4720629B90B77E9460 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				135291A621A3605A69BB428A /* Pods-BikeStation.debug.xcconfig */,
+				00C05BF1B475CB912A7EE607 /* Pods-BikeStation.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		93A9D1CA8E28A288A2C26D78 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				878DB4A77AF825AE4C6CA480 /* Pods_BikeStation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A1066E311E5FD4DF00D5FCC2 = {
 			isa = PBXGroup;
 			children = (
 				A1066E3C1E5FD4DF00D5FCC2 /* BikeStation */,
 				A1066E3B1E5FD4DF00D5FCC2 /* Products */,
+				2967AD4720629B90B77E9460 /* Pods */,
+				93A9D1CA8E28A288A2C26D78 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +84,8 @@
 			children = (
 				A1066E3D1E5FD4DF00D5FCC2 /* AppDelegate.swift */,
 				A1066E3F1E5FD4DF00D5FCC2 /* ViewController.swift */,
+				A1BC43281E5FF4E000D42490 /* BikeStation.swift */,
+				A14CA42F1E5FDBA20010A5A1 /* MapViewController.swift */,
 				A1066E411E5FD4DF00D5FCC2 /* Main.storyboard */,
 				A1066E441E5FD4DF00D5FCC2 /* Assets.xcassets */,
 				A1066E461E5FD4DF00D5FCC2 /* LaunchScreen.storyboard */,
@@ -71,9 +101,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A1066E4C1E5FD4DF00D5FCC2 /* Build configuration list for PBXNativeTarget "BikeStation" */;
 			buildPhases = (
+				A8E06036377986C1C157FAB6 /* [CP] Check Pods Manifest.lock */,
 				A1066E361E5FD4DF00D5FCC2 /* Sources */,
 				A1066E371E5FD4DF00D5FCC2 /* Frameworks */,
 				A1066E381E5FD4DF00D5FCC2 /* Resources */,
+				BA7D0B38F3D6D812D60A2C78 /* [CP] Embed Pods Frameworks */,
+				104F28B5A264BC1A87D83E18 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -131,12 +164,62 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		104F28B5A264BC1A87D83E18 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BikeStation/Pods-BikeStation-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A8E06036377986C1C157FAB6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		BA7D0B38F3D6D812D60A2C78 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BikeStation/Pods-BikeStation-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A1066E361E5FD4DF00D5FCC2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				A1066E401E5FD4DF00D5FCC2 /* ViewController.swift in Sources */,
+				A1BC43291E5FF4E000D42490 /* BikeStation.swift in Sources */,
+				A14CA4301E5FDBA20010A5A1 /* MapViewController.swift in Sources */,
 				A1066E3E1E5FD4DF00D5FCC2 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -256,6 +339,7 @@
 		};
 		A1066E4D1E5FD4DF00D5FCC2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 135291A621A3605A69BB428A /* Pods-BikeStation.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = BikeStation/Info.plist;
@@ -268,6 +352,7 @@
 		};
 		A1066E4E1E5FD4DF00D5FCC2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 00C05BF1B475CB912A7EE607 /* Pods-BikeStation.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = BikeStation/Info.plist;
@@ -297,6 +382,7 @@
 				A1066E4E1E5FD4DF00D5FCC2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

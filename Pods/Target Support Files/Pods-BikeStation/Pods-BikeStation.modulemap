@@ -1,0 +1,6 @@
+framework module Pods_BikeStation {
+  umbrella header "Pods-BikeStation-umbrella.h"
+
+  export *
+  module * { export * }
+}
