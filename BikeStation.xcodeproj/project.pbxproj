@@ -14,6 +14,8 @@
 		A1066E481E5FD4DF00D5FCC2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1066E461E5FD4DF00D5FCC2 /* LaunchScreen.storyboard */; };
 		A14CA4301E5FDBA20010A5A1 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A14CA42F1E5FDBA20010A5A1 /* MapViewController.swift */; };
 		A1BC43291E5FF4E000D42490 /* BikeStation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BC43281E5FF4E000D42490 /* BikeStation.swift */; };
+		A1BC432B1E600A5300D42490 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1BC432A1E600A5300D42490 /* CoreLocation.framework */; };
+		A1BC432D1E600A8F00D42490 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1BC432C1E600A8F00D42490 /* MapKit.framework */; };
 		FF3EEC13A4DA2CFDB6E43468 /* Pods_BikeStation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 878DB4A77AF825AE4C6CA480 /* Pods_BikeStation.framework */; };
 /* End PBXBuildFile section */
 
@@ -30,6 +32,8 @@
 		A1066E491E5FD4DF00D5FCC2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A14CA42F1E5FDBA20010A5A1 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		A1BC43281E5FF4E000D42490 /* BikeStation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BikeStation.swift; sourceTree = "<group>"; };
+		A1BC432A1E600A5300D42490 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		A1BC432C1E600A8F00D42490 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +41,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1BC432D1E600A8F00D42490 /* MapKit.framework in Frameworks */,
+				A1BC432B1E600A5300D42490 /* CoreLocation.framework in Frameworks */,
 				FF3EEC13A4DA2CFDB6E43468 /* Pods_BikeStation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -56,6 +62,8 @@
 		93A9D1CA8E28A288A2C26D78 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A1BC432C1E600A8F00D42490 /* MapKit.framework */,
+				A1BC432A1E600A5300D42490 /* CoreLocation.framework */,
 				878DB4A77AF825AE4C6CA480 /* Pods_BikeStation.framework */,
 			);
 			name = Frameworks;
@@ -84,8 +92,8 @@
 			children = (
 				A1066E3D1E5FD4DF00D5FCC2 /* AppDelegate.swift */,
 				A1066E3F1E5FD4DF00D5FCC2 /* ViewController.swift */,
-				A1BC43281E5FF4E000D42490 /* BikeStation.swift */,
 				A14CA42F1E5FDBA20010A5A1 /* MapViewController.swift */,
+				A1BC43281E5FF4E000D42490 /* BikeStation.swift */,
 				A1066E411E5FD4DF00D5FCC2 /* Main.storyboard */,
 				A1066E441E5FD4DF00D5FCC2 /* Assets.xcassets */,
 				A1066E461E5FD4DF00D5FCC2 /* LaunchScreen.storyboard */,
